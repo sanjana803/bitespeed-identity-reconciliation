@@ -123,3 +123,9 @@ src/
 ## License
 
 This project is licensed under the MIT License - see the [LICENSE](LICENSE) file for details.
+
+## Deployment
+
+The app is hosted on Render.com. You can access the API at:
+
+https://bitespeed-identity-reconciliation-vp5m.onrender.com
