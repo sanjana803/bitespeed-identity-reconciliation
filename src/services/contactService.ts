@@ -49,7 +49,7 @@ export const identifyContactService = async (body: { email?: string; phoneNumber
   if (email && phoneNumber) {
     const emailExists = contacts.some((c: any) => c.email === email);
     const phoneExists = contacts.some((c: any) => c.phoneNumber === phoneNumber);
-    if (emailExists && !phoneExists) {
+    if (!emailExists || !phoneExists) {
       const newSecondary = await contactStore.createContact({
         email,
         phoneNumber,

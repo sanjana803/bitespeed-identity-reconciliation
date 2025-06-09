@@ -130,8 +130,8 @@ The application is configured for deployment on Render.com. Follow these steps:
 1. Create a new Web Service on Render
 2. Connect your GitHub repository
 3. Set the following:
-   - Build Command: `yarn install && yarn build`
-   - Start Command: `yarn start`
+   - Build Command: `npm install && npm run build && npx prisma migrate deploy`
+   - Start Command: `npm start`
 4. Add environment variables
 5. Deploy!
 
