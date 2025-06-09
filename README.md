@@ -21,8 +21,6 @@ A robust API service for reconciling user identities through email and phone num
 - **Database**: PostgreSQL
 - **ORM**: Prisma
 - **Logging**: Winston
-- **API Documentation**: Swagger/OpenAPI
-- **Testing**: Jest
 - **Linting**: ESLint
 - **Formatting**: Prettier
 
@@ -57,7 +55,7 @@ CORS_ORIGIN=*
 
 1. Clone the repository:
    ```bash
-   git clone https://github.com/yourusername/bitespeed-identity-reconciliation.git
+   git clone https://github.com/sanjana803/bitespeed-identity-reconciliation.git
    cd bitespeed-identity-reconciliation
    ```
 
@@ -118,30 +116,9 @@ src/
 
 ## Development
 
-- Run tests: `yarn test`
 - Lint code: `yarn lint`
 - Format code: `yarn format`
 - Build: `yarn build`
-
-## Deployment
-
-The application is configured for deployment on Render.com. Follow these steps:
-
-1. Create a new Web Service on Render
-2. Connect your GitHub repository
-3. Set the following:
-   - Build Command: `npm install && npm run build && npx prisma migrate deploy`
-   - Start Command: `npm start`
-4. Add environment variables
-5. Deploy!
-
-## Contributing
-
-1. Fork the repository
-2. Create your feature branch (`git checkout -b feature/amazing-feature`)
-3. Commit your changes (`git commit -m 'Add some amazing feature'`)
-4. Push to the branch (`git push origin feature/amazing-feature`)
-5. Open a Pull Request
 
 ## License
 
