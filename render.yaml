@@ -1,0 +1,11 @@
+services:
+  - type: web
+    name: bitespeed-identity-reconciliation
+    env: node
+    buildCommand: yarn install && npx prisma generate && yarn build
+    startCommand: yarn start
+    envVars:
+      - key: DATABASE_URL
+        sync: false
+      - key: PORT
+        value: 3000 
